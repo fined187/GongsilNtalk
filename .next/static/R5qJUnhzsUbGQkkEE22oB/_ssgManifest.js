@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002FCommunity\u002FContents\u002FMegazine\u002Fposts\u002F[id]","\u002FCommunity\u002FContents\u002FYoutube\u002Fposts\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
