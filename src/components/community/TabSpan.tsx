@@ -4,7 +4,7 @@ type Props = {
   tabClicked: number;
 };
 
-export const FirstContent = styled.span<Props>`
+export const GongtalkContentsText = styled.span<Props>`
   position: absolute;
   top: 19.5px;
   left: 147.5px;
@@ -25,7 +25,7 @@ export const FirstContent = styled.span<Props>`
   color: ${(props) => `${props.tabClicked === 0 ? '#000000' : '#D5D5D5'}`};
 `;
 
-export const SecondContent = styled(FirstContent)<Props>`
+export const CommunityText = styled(GongtalkContentsText)<Props>`
   left: 547.5px;
   color: ${(props) => `${props.tabClicked === 1 ? '#000000' : '#D5D5D5'}`};
 `;

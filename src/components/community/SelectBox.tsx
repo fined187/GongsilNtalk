@@ -14,7 +14,7 @@ export const SelectBox = styled.div`
   &::before {
     content: '⌵';
     position: absolute;
-    top: 1px;
+    top: 0px;
     right: 8px;
     color: #333333;
     font-size: 20px;

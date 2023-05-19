@@ -4,7 +4,7 @@ import {
   QnABoxTab,
   ReviewTab,
 } from '@/components/community/CommunityBox';
-import { SecondContent } from '@/components/community/TabSpan';
+import { CommunityText } from '@/components/community/TabSpan';
 import { useState } from 'react';
 import QnA from './QnA';
 import FreeBoard from './FreeBoard';
@@ -22,9 +22,9 @@ export default function Board({ tabClicked, setTabClicked }: Props) {
 
   return (
     <>
-      <SecondContent tabClicked={tabClicked} onClick={() => setTabClicked(1)}>
+      <CommunityText tabClicked={tabClicked} onClick={() => setTabClicked(1)}>
         커뮤니티
-      </SecondContent>
+      </CommunityText>
       {tabClicked == 1 ? (
         <>
           <QnABoxTab innerTab={innerTab} onClick={() => setInnerTab(0)}>

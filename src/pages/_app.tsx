@@ -1,13 +1,16 @@
 import Layout from '@/components/Layout';
 import type { AppProps } from 'next/app';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
-const GlobalStyle = createGlobalStyle`
-  background-color: #F5F5F5;
-`;
+<link
+  href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+  rel="stylesheet"
+/>
 
 const theme = extendTheme({
+  fonts: {
+    body: "'Nanum Gothic', sans-serif",
+  },
   styles: {
     global: {
       body: {
@@ -20,7 +23,6 @@ const theme = extendTheme({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <GlobalStyle />
       <Layout>
         <Component {...pageProps} />
       </Layout>
