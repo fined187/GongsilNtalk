@@ -11,18 +11,76 @@ import Notice from '../../Notice';
 import Image from 'next/image';
 import Paging from '../../Paging';
 import Link from 'next/link';
+import { MegazineTab, TabBox, YoutubeTab } from '@/components/community/TabBox';
+import {
+  CommunityText,
+  GongtalkContentsText,
+} from '@/components/community/TabSpan';
+import { useEffect, useState } from 'react';
+import { Youtubes, community } from '../../../../../NoticeDummy';
 
-type Props = {
-  post: any;
-  mPosts: any;
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-};
+export default function Megazine() {
+  const [tabClicked, setTabClicked] = useState<number>(0);
+  const [innerTab, setInnerTab] = useState<number>(1);
+  const [clickedOrder, setClickedOrder] = useState<number>(0);
+  const [post, setPost] = useState<any>([]);
+  const [yPosts, setYposts] = useState<any>(Youtubes);
+  const [mPosts, setMposts] = useState<any>(community);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [postPerPage, setPostPerPage] = useState<number>(5);
 
-export default function Megazine({ post, mPosts, setCurrentPage }: Props) {
+  const indexOfLast = currentPage * postPerPage;
+  const indexOfFirst = indexOfLast - postPerPage;
+
+  const currentPosts = (posts: any) => {
+    let currentPosts = 0;
+    currentPosts = posts?.slice(indexOfFirst, indexOfLast);
+    return currentPosts;
+  };
+
+  /** API 생성시 수정 */
+  useEffect(() => {
+    const fetchData = () => {
+      if (innerTab === 0) {
+        setPost(currentPosts(yPosts));
+      } else {
+        setPost(currentPosts(mPosts));
+      }
+    };
+    fetchData();
+  }, [currentPage, innerTab]);
+
+  const handleClick = (number: number) => {
+    setClickedOrder(number);
+  };
+
   return (
     <>
-      <Notice />
-      <EmptyBox />
+      <TabBox>
+        <GongtalkContentsText
+          tabClicked={tabClicked}
+          onClick={() => setTabClicked(0)}
+        >
+          공톡 컨텐츠
+        </GongtalkContentsText>
+        <CommunityText tabClicked={tabClicked} onClick={() => setTabClicked(1)}>
+          커뮤니티
+        </CommunityText>
+        {tabClicked === 0 ? (
+          <>
+            <Link href={'/Community/Contents/Youtube'}>
+              <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>
+                공톡 유튜브
+              </YoutubeTab>
+            </Link>
+            <MegazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
+              공톡 매거진
+            </MegazineTab>
+          </>
+        ) : null}
+        <Notice />
+        <EmptyBox />
+      </TabBox>
       <ContentsBox>
         {post?.map((a: any, i: number) => {
           return (

@@ -54,7 +54,10 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
 
   return (
     <>
-      <GongtalkContentsText tabClicked={tabClicked} onClick={() => setTabClicked(0)}>
+      <GongtalkContentsText
+        tabClicked={tabClicked}
+        onClick={() => setTabClicked(0)}
+      >
         공톡 컨텐츠
       </GongtalkContentsText>
       {tabClicked === 0 ? (
@@ -89,7 +92,7 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
               show={showSearch}
             />
           </SearchContainer>
-          {innerTab === 0 ? (
+          {/* {innerTab === 0 ? (
             <Youtube
               post={post}
               yPosts={yPosts}
@@ -101,7 +104,7 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
               mPosts={mPosts}
               setCurrentPage={setCurrentPage}
             />
-          )}
+          )} */}
         </>
       ) : null}
     </>

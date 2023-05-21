@@ -26,7 +26,6 @@ interface Props {
 }
 
 const MegazineDetail: NextPage<Props> = ({ megazine }) => {
-  
   const router = useRouter();
 
   const handleGoBack = () => {

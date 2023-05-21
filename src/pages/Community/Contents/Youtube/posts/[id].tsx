@@ -41,7 +41,6 @@ import {
 } from '@/components/community/ReplBox';
 import { useRouter } from 'next/router';
 
-
 interface Props {
   megazine: Megazine;
   youtube: Youtube | undefined;
@@ -57,7 +56,11 @@ const YoutubeDetail: NextPage<Props> = ({ youtube }) => {
   return (
     <>
       <DetailTopBox>
-        <MBackArrow onClick={() => {handleGoBack();}}>
+        <MBackArrow
+          onClick={() => {
+            handleGoBack();
+          }}
+        >
           <Image src={'/BackArrow.png'} alt="BackArrow" width={9} height={16} />
         </MBackArrow>
       </DetailTopBox>

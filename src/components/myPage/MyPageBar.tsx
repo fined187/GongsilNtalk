@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MyPage = styled.div`
   @media screen and (max-width: 768px) {
@@ -10,12 +10,12 @@ export const MyPage = styled.div`
   position: absolute;
   display: flex;
   width: 359px;
-  
+
   left: 1560px;
   top: 9px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   height: 866px;
-  transition: all .35s;
+  transition: all 0.35s;
 `;
 
 export const TopBar = styled.div`
@@ -37,8 +37,8 @@ export const TopBarText = styled.span`
   position: absolute;
   width: 50px;
   height: 18px;
-  left: calc(50% - 47px/2 - 0px);
-  top: calc(50% - 18px/2);
+  left: calc(50% - 47px / 2 - 0px);
+  top: calc(50% - 18px / 2);
 
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
@@ -105,9 +105,9 @@ export const LoginBtn = styled.button`
   align-items: center;
   padding: 0px;
 
-  background-color: #F16341;
+  background-color: #f16341;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
@@ -142,8 +142,8 @@ export const RegiBtn = styled.button`
 
   text-align: center;
   letter-spacing: -0.03em;
-  color: #F16341;
-  border: 1px solid #F16341;
+  color: #f16341;
+  border: 1px solid #f16341;
   border-radius: 5px;
 `;
 
@@ -175,7 +175,7 @@ export const CenterCallBtn = styled.button`
   width: 328px;
   height: 50px;
 
-  border: 1px solid #F16341;
+  border: 1px solid #f16341;
   border-radius: 5px;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -188,7 +188,7 @@ export const CenterCallBtn = styled.button`
   align-items: center;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #F16341;
+  color: #f16341;
 `;
 
 export const PhoneLogo = styled.div`
@@ -246,7 +246,7 @@ export const MyBox = styled.div`
   top: 90px;
 
   box-sizing: border-box;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
   border-radius: 10px;
 `;
 
@@ -267,7 +267,6 @@ export const MyProductBox = styled.div`
   left: 32px;
   top: 19px;
   cursor: pointer;
-
 `;
 
 export const LikedProduct = styled.div`

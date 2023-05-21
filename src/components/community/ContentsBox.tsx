@@ -4,12 +4,11 @@ export const ContentsBox = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
-
   position: absolute;
   width: 778px;
   height: 1200px;
-  left: 0px;
-  top: 230px;
+  left: 370px;
+  top: 290px;
   border: none;
   background-color: #ffffff;
 `;

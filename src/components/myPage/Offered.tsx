@@ -1,12 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
-  subTab: number
-}
+  subTab: number;
+};
 
 export const AddressBox = styled.div`
   @media screen and (max-width: 768) {
-    
   }
   position: absolute;
   display: flex;
@@ -18,14 +17,12 @@ export const AddressBox = styled.div`
   left: 472px;
 
   background-color: #ffffff;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
   border-radius: 10px;
-
 `;
 
 export const OfferTitle = styled.span`
   @media screen and (max-width: 768px) {
-    
   }
   position: absolute;
   width: 360px;
@@ -43,12 +40,11 @@ export const OfferTitle = styled.span`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: #2A2828;
+  color: #2a2828;
 `;
 
 export const PageCnt = styled.span`
   @media screen and (max-width: 768px) {
-    
   }
   position: absolute;
   width: 46px;
@@ -66,7 +62,7 @@ export const PageCnt = styled.span`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 `;
 
 export const AddressTitle = styled.span`
@@ -123,7 +119,7 @@ export const ConditionBox = styled.div`
   top: 370px;
 
   background-color: #ffffff;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
   border-radius: 10px;
 `;
 
@@ -173,26 +169,27 @@ export const BuildingTab = styled.div<Props>`
   width: 65px;
   height: 40px;
 
-  
   border-radius: 50px;
-  
+
   flex: none;
   order: 0;
   flex-grow: 0;
-  
+
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  
+
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: -0.03em;
-  
-  border: ${(props) => `${props.subTab === 0 ? '1px solid #F16341' : '1px solid #D5D5D5'}}`};
-  background: ${(props) => `${props.subTab === 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}}`} ;
+
+  border: ${(props) =>
+    `${props.subTab === 0 ? '1px solid #F16341' : '1px solid #D5D5D5'}}`};
+  background: ${(props) =>
+    `${props.subTab === 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}}`};
   color: ${(props) => `${props.subTab === 0 ? '#F16341' : '#9E9E9E'}}`};
   cursor: pointer;
 `;
@@ -223,8 +220,10 @@ export const OfficeTab = styled.div<Props>`
   letter-spacing: -0.03em;
 
   color: ${(props) => `${props.subTab === 1 ? '#F16341' : '#9E9E9E'}}`};
-  background-color:${(props) => `${props.subTab === 1 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}}`};
-  border: ${(props) => `${props.subTab === 1 ? '1px solid #F16341' : '1px solid #D5D5D5'}}`};
+  background-color: ${(props) =>
+    `${props.subTab === 1 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}}`};
+  border: ${(props) =>
+    `${props.subTab === 1 ? '1px solid #F16341' : '1px solid #D5D5D5'}}`};
   cursor: pointer;
 `;
 
@@ -255,9 +254,8 @@ export const Meter = styled.input`
 
   gap: 10px;
 
-  border: 1px solid #D5D4D4;
+  border: 1px solid #d5d4d4;
   border-radius: 5px;
-
 `;
 
 export const MeterBox = styled.div`
@@ -274,7 +272,7 @@ export const ChangeMeter = styled.input`
   left: 180px;
   top: 22px;
 
-  border: 1px solid #D5D4D4;
+  border: 1px solid #d5d4d4;
   border-radius: 5px;
 `;
 
@@ -305,7 +303,7 @@ export const UserInput = styled.input`
   position: absolute;
   padding: 12px 0px 12px 14px;
   top: 70px;
-  border: 1px solid #D5D4D4;
+  border: 1px solid #d5d4d4;
   border-radius: 5px;
 `;
 
@@ -330,7 +328,7 @@ export const NextBtn = styled.button`
   left: 1298px;
   top: 950px;
 
-  background: #F16341;
+  background: #f16341;
   border-radius: 5px;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -346,7 +344,7 @@ export const NextBtn = styled.button`
 `;
 
 export const SelectedNum = styled.span`
-  color: #F16341;
+  color: #f16341;
   margin-left: 5px;
   margin-right: 5px;
 `;

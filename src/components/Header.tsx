@@ -51,7 +51,7 @@ export default function Header() {
 
   const handleMyPage = () => {
     setActiveMyPage(!activeMyPage);
-  }
+  };
 
   useEffect(() => {
     setActiveBtn(router.pathname);
@@ -197,7 +197,7 @@ export default function Header() {
           </HeaderMyProduct>
           <HeaderCommunityBox activeBtn={router.pathname}>
             <Link
-              href={'/Community'}
+              href={'/Community/Contents/Youtube'}
               onClick={() => {
                 setActiveBtn(router.pathname);
               }}
@@ -213,25 +213,30 @@ export default function Header() {
             <Link href={'/Sign-up'}>회원가입</Link>
           </HeaderRegister>
           <JonggaeBox>중개사 가입</JonggaeBox>
-          <MenuIcon onClick={() => {handleToggle(); handleMyPage();}}>
+          <MenuIcon
+            onClick={() => {
+              handleToggle();
+              handleMyPage();
+            }}
+          >
             {isOpen ? <FaBars /> : <FaBars />}
           </MenuIcon>
           <NavMenu isOpen={isOpen}>
             <NavItem></NavItem>
           </NavMenu>
-          {
-          activeMyPage && login ? 
-          (
-            <MyPageBarLogin login={login} activeMyPage={activeMyPage} setActiveMyPage={setActiveMyPage} />
-          )
-          :
-          activeMyPage && !login ?
-          (
-            <MyPageBar login={login} activeMyPage={activeMyPage} setActiveMyPage={setActiveMyPage} />
-          )
-          :
-            null  
-          } 
+          {activeMyPage && login ? (
+            <MyPageBarLogin
+              login={login}
+              activeMyPage={activeMyPage}
+              setActiveMyPage={setActiveMyPage}
+            />
+          ) : activeMyPage && !login ? (
+            <MyPageBar
+              login={login}
+              activeMyPage={activeMyPage}
+              setActiveMyPage={setActiveMyPage}
+            />
+          ) : null}
         </HeaderBox>
       </StyledEngineProvider>
     </>

@@ -1,10 +1,10 @@
-import axios from 'axios'
+import axios from 'axios';
 
-const pattern = "/^서울/";
+const pattern = '/^서울/';
 
-const API_KEY = process.env.REST_API_KEY;
+const REST_API_KEY = process.env.REST_API_KEY;
 
-const baseURL = `https://dapi.kakao.com/`
+const baseURL = `https://dapi.kakao.com/`;
 
 const headers = {
   'Content-Type': 'application/json',
@@ -13,15 +13,17 @@ const headers = {
 const baseApiInstance = axios.create({
   baseURL,
   headers: {
-    Authorization: 'KakaoAK 46ddd2a3fad8c2c88bdfef2b79483423'
+    Authorization: `KakaoAK 46ddd2a3fad8c2c88bdfef2b79483423`,
   },
 });
 
 export const CallAddress = async (page: number) => {
   try {
-    const response = await baseApiInstance.get(`v2/local/search/address.json?query=${pattern}&page=${page}&size=10&analyze_type=similar`);
+    const response = await baseApiInstance.get(
+      `v2/local/search/keyword.json?query=서울시 &page=${page}&size=10&analyze_type=similar`
+    );
     return response.data;
   } catch (error) {
-    console.log('ERROR: ', error)
+    console.log('ERROR: ', error);
   }
-}
+};

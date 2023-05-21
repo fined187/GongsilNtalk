@@ -27,7 +27,7 @@ export const DetailBox = styled.div`
   background-color: #ffffff;
   left: 21%;
   right: 40%;
-  margin-top: 3.2%;
+  margin-top: 4.5%;
 `;
 
 export const UserInfoBox = styled.div`
@@ -103,7 +103,7 @@ export const DetailContent = styled.div`
     color: #000000;
   }
   position: absolute;
-  top: 262px;
+  top: 260px;
   width: 702px;
   left: 38px;
 `;
