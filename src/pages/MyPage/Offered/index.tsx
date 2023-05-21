@@ -7,7 +7,6 @@ import {
   ConditionBox,
   ConditionText,
   Meter,
-  MeterBox,
   MinimumArea,
   NextBtn,
   OfferTitle,
@@ -22,7 +21,6 @@ import {
 } from '@/components/myPage/Offered';
 import { useEffect, useState } from 'react';
 import { Select } from 'antd';
-import Image from 'next/image';
 import { CallAddress } from '@/pages/api/Sigungu';
 
 export default function Offered() {

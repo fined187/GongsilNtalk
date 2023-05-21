@@ -20,7 +20,7 @@ const baseApiInstance = axios.create({
 export const CallAddress = async (page: number) => {
   try {
     const response = await baseApiInstance.get(
-      `v2/local/search/keyword.json?query=서울시 &page=${page}&size=10&analyze_type=similar`
+      `v2/local/search/address.json?query=`
     );
     return response.data;
   } catch (error) {
