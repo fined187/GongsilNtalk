@@ -35,7 +35,7 @@ const ReviewTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnABo
 const ContentsBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
   displayName: "CommunityBox__ContentsBox",
   componentId: "sc-1t1ipgg-4"
-})(["position:absolute;width:778px;height:1200px;left:0px;top:230px;background-color:#ffffff;"]);
+})(["position:absolute;width:778px;height:1200px;left:370px;top:290px;background-color:#ffffff;"]);
 
 /***/ })
 

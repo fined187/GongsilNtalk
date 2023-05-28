@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1492],{7456:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/MyPage/Offered1",function(){return u(9734)}])}},function(n){n.O(0,[4189,9734,9774,2888,179],function(){return n(n.s=7456)}),_N_E=n.O()}]);

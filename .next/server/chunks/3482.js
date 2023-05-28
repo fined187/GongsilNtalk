@@ -39,7 +39,7 @@ exports.modules = {
 const MyPage = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
   displayName: "MyPageBar__MyPage",
   componentId: "sc-lt3h8c-0"
-})(["@media screen and (max-width:768px){display:flex;left:0px;top:0px;height:500px;}position:absolute;display:flex;width:359px;left:1560px;top:9px;background-color:#f0f0f0;height:866px;transition:all 0.35s;"]);
+})(["@media screen and (max-width:768px){display:flex;left:0px;top:0px;height:500px;}position:absolute;display:flex;width:359px;left:1560px;top:9px;background-color:#f0f0f0;height:866px;transition:all 0.35s;z-index:99999;"]);
 const TopBar = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
   displayName: "MyPageBar__TopBar",
   componentId: "sc-lt3h8c-1"

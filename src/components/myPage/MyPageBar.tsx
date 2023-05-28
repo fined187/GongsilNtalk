@@ -16,6 +16,7 @@ export const MyPage = styled.div`
   background-color: #f0f0f0;
   height: 866px;
   transition: all 0.35s;
+  z-index: 99999;
 `;
 
 export const TopBar = styled.div`

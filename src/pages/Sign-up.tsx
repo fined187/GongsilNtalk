@@ -20,9 +20,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+type Object = {
+  id: number;
+  title: string;
+};
+
 export default function SignUp() {
   const [emailRegi, setEmailRegi] = useState<boolean>(false);
-  const [checkItems, setCheckItems] = useState<any[]>([]);
+  const [checkItems, setCheckItems] = useState<number[]>([]);
 
   const data = [
     { id: 0, title: '[필수] 약관1 및 클릭시 약관 상세 바로가기' },
@@ -31,19 +36,19 @@ export default function SignUp() {
     { id: 3, title: '[선택] 약관4 및 클릭시 약관 상세 바로가기' },
   ];
 
-  const handleSingleCheck = (checked: any, id: any) => {
+  const handleSingleCheck = (checked: boolean, id: number) => {
     if (checked) {
       setCheckItems((prev: any) => [...prev, id]);
     } else {
-      setCheckItems(checkItems.filter((el: any) => el !== id));
+      setCheckItems(checkItems.filter((el: number) => el !== id));
     }
   };
 
-  const handleAllCheck = (checked: any) => {
+  const handleAllCheck = (checked: boolean) => {
     if (checked) {
-      const idArray: any = [];
+      const idArray: number[] = [];
 
-      data.forEach((el: any) => idArray.push(el.id));
+      data.forEach((el: Object) => idArray.push(el.id));
       setCheckItems(idArray);
     } else {
       setCheckItems([]);

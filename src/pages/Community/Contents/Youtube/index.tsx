@@ -73,9 +73,14 @@ export default function Youtube() {
         >
           공톡 컨텐츠
         </GongtalkContentsText>
-        <CommunityText tabClicked={tabClicked} onClick={() => setTabClicked(1)}>
-          커뮤니티
-        </CommunityText>
+        <Link href={'/Community/Board/QnA'}>
+          <CommunityText
+            tabClicked={tabClicked}
+            onClick={() => setTabClicked(1)}
+          >
+            커뮤니티
+          </CommunityText>
+        </Link>
         {tabClicked === 0 ? (
           <>
             <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>
@@ -89,9 +94,7 @@ export default function Youtube() {
           </>
         ) : (
           <>
-            <Link href={'/Community/Board'}>
-              <Board tabClicked={tabClicked} setTabClicked={setTabClicked} />
-            </Link>
+            <Board tabClicked={tabClicked} setTabClicked={setTabClicked} />
           </>
         )}
         <Notice />

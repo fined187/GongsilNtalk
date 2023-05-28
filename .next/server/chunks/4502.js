@@ -48,16 +48,19 @@ function MyPageBarLogin({
               fill: "#9B9B9B"
             })
           })
-        }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .AlarmBox */ .ST, {
-          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
-            width: "18",
-            height: "22",
-            viewBox: "0 0 18 22",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
-              d: "M9 22C10.2375 22 11.25 20.9846 11.25 19.7436H6.75C6.75 20.9846 7.7625 22 9 22ZM15.75 15.2308V9.58974C15.75 6.12615 13.9163 3.22667 10.6875 2.45949V1.69231C10.6875 0.755897 9.93375 0 9 0C8.06625 0 7.3125 0.755897 7.3125 1.69231V2.45949C4.095 3.22667 2.25 6.11487 2.25 9.58974V15.2308L0 17.4872V18.6154H18V17.4872L15.75 15.2308ZM13.5 16.359H4.5V9.58974C4.5 6.7918 6.19875 4.51282 9 4.51282C11.8013 4.51282 13.5 6.7918 13.5 9.58974V16.359Z",
-              fill: "#666666"
+        }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+          href: '/Alarm',
+          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .AlarmBox */ .ST, {
+            children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
+              width: "18",
+              height: "22",
+              viewBox: "0 0 18 22",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg",
+              children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
+                d: "M9 22C10.2375 22 11.25 20.9846 11.25 19.7436H6.75C6.75 20.9846 7.7625 22 9 22ZM15.75 15.2308V9.58974C15.75 6.12615 13.9163 3.22667 10.6875 2.45949V1.69231C10.6875 0.755897 9.93375 0 9 0C8.06625 0 7.3125 0.755897 7.3125 1.69231V2.45949C4.095 3.22667 2.25 6.11487 2.25 9.58974V15.2308L0 17.4872V18.6154H18V17.4872L15.75 15.2308ZM13.5 16.359H4.5V9.58974C4.5 6.7918 6.19875 4.51282 9 4.51282C11.8013 4.51282 13.5 6.7918 13.5 9.58974V16.359Z",
+                fill: "#666666"
+              })
             })
           })
         }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .TopBarText */ .KW, {
@@ -124,7 +127,7 @@ function MyPageBarLogin({
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenuBox */ .Q4, {
               children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                href: '/MyPage/Offered',
+                href: '/MyPage',
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenu1 */ .bL, {
                   children: ["\uB9E4\uBB3C \uC81C\uC548\uC11C \uBC1B\uAE30", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
                     style: {
@@ -145,44 +148,50 @@ function MyPageBarLogin({
                     })
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenu2 */ .zD, {
-                children: ["\uC218\uC775\uB960 \uACC4\uC0B0\uAE30", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
-                  style: {
-                    marginLeft: 235
-                  },
-                  children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
-                    width: "8",
-                    height: "13",
-                    viewBox: "0 0 8 13",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
-                      d: "M1 1L6.59792 6.13142C6.8141 6.32959 6.8141 6.67041 6.59792 6.86858L1 12",
-                      stroke: "#9B9B9B",
-                      strokeWidth: "1.5",
-                      strokeLinecap: "round"
+              }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                href: '/Profit',
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenu2 */ .zD, {
+                  children: ["\uC218\uC775\uB960 \uACC4\uC0B0\uAE30", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
+                    style: {
+                      marginLeft: 235
+                    },
+                    children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
+                      width: "8",
+                      height: "13",
+                      viewBox: "0 0 8 13",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
+                        d: "M1 1L6.59792 6.13142C6.8141 6.32959 6.8141 6.67041 6.59792 6.86858L1 12",
+                        stroke: "#9B9B9B",
+                        strokeWidth: "1.5",
+                        strokeLinecap: "round"
+                      })
                     })
-                  })
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenu3 */ .zU, {
-                children: ["\uCEE4\uBBA4\uB2C8\uD2F0 \uAC8C\uC2DC\uAE00 \uAD00\uB9AC", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
-                  style: {
-                    marginLeft: 196
-                  },
-                  children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
-                    width: "8",
-                    height: "13",
-                    viewBox: "0 0 8 13",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
-                      d: "M1 1L6.59792 6.13142C6.8141 6.32959 6.8141 6.67041 6.59792 6.86858L1 12",
-                      stroke: "#9B9B9B",
-                      strokeWidth: "1.5",
-                      strokeLinecap: "round"
+                  })]
+                })
+              }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                href: '/MyBoard',
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_components_myPage_MyPageBar__WEBPACK_IMPORTED_MODULE_1__/* .SubMenu3 */ .zU, {
+                  children: ["\uCEE4\uBBA4\uB2C8\uD2F0 \uAC8C\uC2DC\uAE00 \uAD00\uB9AC", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("div", {
+                    style: {
+                      marginLeft: 196
+                    },
+                    children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("svg", {
+                      width: "8",
+                      height: "13",
+                      viewBox: "0 0 8 13",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("path", {
+                        d: "M1 1L6.59792 6.13142C6.8141 6.32959 6.8141 6.67041 6.59792 6.86858L1 12",
+                        stroke: "#9B9B9B",
+                        strokeWidth: "1.5",
+                        strokeLinecap: "round"
+                      })
                     })
-                  })
-                })]
+                  })]
+                })
               })]
             })]
           })]

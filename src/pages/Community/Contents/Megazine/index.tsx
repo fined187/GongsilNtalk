@@ -63,9 +63,14 @@ export default function Megazine() {
         >
           공톡 컨텐츠
         </GongtalkContentsText>
-        <CommunityText tabClicked={tabClicked} onClick={() => setTabClicked(1)}>
-          커뮤니티
-        </CommunityText>
+        <Link href={'/Community/Board/QnA'}>
+          <CommunityText
+            tabClicked={tabClicked}
+            onClick={() => setTabClicked(1)}
+          >
+            커뮤니티
+          </CommunityText>
+        </Link>
         {tabClicked === 0 ? (
           <>
             <Link href={'/Community/Contents/Youtube'}>

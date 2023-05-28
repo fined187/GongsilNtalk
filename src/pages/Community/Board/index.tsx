@@ -11,6 +11,7 @@ import FreeBoard from './FreeBoard';
 import KnowHow from './KnowHow';
 import Review from './Review';
 import Notice from '../Notice';
+import Link from 'next/link';
 
 type Props = {
   tabClicked: number;

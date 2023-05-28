@@ -83,8 +83,8 @@ export const ContentsBox = styled.div`
   position: absolute;
   width: 778px;
   height: 1200px;
-  left: 0px;
-  top: 230px;
+  left: 370px;
+  top: 290px;
 
   background-color: #ffffff;
 `;
